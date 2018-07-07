@@ -50,6 +50,7 @@ allprojects {
 
     group = 'de.schauderhaft.degraph'
 
+	version = '0.1-SNAPSHOT'
     // Following are workarounds to idea goal failing on:
     // Cannot infer Scala class path because..
     // - no repository is declared in root project
@@ -59,6 +60,7 @@ allprojects {
 //    apply from: "$rootDir/gradle/dependencies.gradle"
     dependencies {
         compile scalaLibraryDependency
+        compile 'commons-lang:commons-lang:2.3'
     }
 
 }
